@@ -5,7 +5,6 @@ import { IndustryHome } from '../components/sections/IndustryHome'
 import { WhyAumHome } from '../components/sections/WhyAumHome'
 import { CapabilitiesHome } from '../components/sections/CapabilitiesHome'
 import { TestimonialsHome } from '../components/sections/TestimonialsHome'
-import { FooterHome } from '../components/sections/FooterHome'
 
 export const Home = () => {
   return (
@@ -17,7 +16,6 @@ export const Home = () => {
       <WhyAumHome />
       <CapabilitiesHome />
       <TestimonialsHome />
-      <FooterHome />
     </>
   )
 }
