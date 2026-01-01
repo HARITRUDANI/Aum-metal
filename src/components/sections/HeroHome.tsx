@@ -2,14 +2,14 @@ import { CTAButton } from "../CTAButton";
 
 export const HeroHome = () => {
   return (
-    <section
-      id="hero-home"
+    <section 
+      id="hero-home" 
       className="relative w-full flex items-center justify-center overflow-hidden h-[calc(100vh-80px)] min-h-[calc(100vh-80px)]"
     >
       {/* Background Image with Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         {/* Metal background pattern */}
-        <div
+        <div 
           className="absolute inset-0 opacity-40"
           style={{
             background: `

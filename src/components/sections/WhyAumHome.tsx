@@ -1,53 +1,120 @@
+import { useState } from "react";
+
 export const WhyAumHome = () => {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
+
   const features = [
     {
-      title: 'Quality Assurance',
-      description: 'Rigorous quality control processes ensure every product meets the highest standards.',
+      title: "Custom Sizes & Grades",
+      description:
+        "From standard stock to custom diameters, lengths, and alloy grades, we adapt production to meet specific engineering and application requirements.",
     },
     {
-      title: 'Expert Team',
-      description: 'Our experienced team brings decades of industry knowledge and expertise.',
+      title: "Comprehensive Brass Solutions",
+      description:
+        "We offer a complete range of brass products including rods, ingots, and billets manufactured with precision and quality control.",
     },
     {
-      title: 'Reliable Supply',
-      description: 'Consistent production capacity to meet your business needs.',
+      title: "Customization Capability",
+      description:
+        "Our flexible manufacturing process allows us to customize products according to your specific requirements and specifications.",
     },
     {
-      title: 'Global Reach',
-      description: 'Serving customers worldwide with reliable export capabilities.',
+      title: "Flexible Production Volumes",
+      description:
+        "Whether you need small batches or large-scale production, we can accommodate your volume requirements efficiently.",
     },
-  ]
+    {
+      title: "Strong Raw Material Sourcing",
+      description:
+        "We maintain reliable relationships with trusted suppliers to ensure consistent quality of raw materials for our production.",
+    },
+    {
+      title: "Quality-Driven Manufacturing",
+      description:
+        "Our manufacturing processes are driven by stringent quality standards to deliver products that exceed expectations.",
+    },
+    {
+      title: "Sustainable Manufacturing",
+      description:
+        "We are committed to sustainable practices in our manufacturing processes to minimize environmental impact.",
+    },
+  ];
+
+  const toggleAccordion = (index: number) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
 
   return (
-    <section 
-      id="why-aum-home" 
-      className="min-h-screen w-full flex items-center justify-center bg-[#8B1A1A] text-white"
+    <section
+      id="why-aum-home"
+      className="min-h-screen w-full flex items-center justify-center bg-white py-12 sm:py-16 md:py-20 lg:py-24"
     >
-      <div className="container mx-auto px-4 py-12 md:py-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-              Why Choose AUM Metal Alloys?
+      <div className="w-full px-4 sm:px-6 md:content-padding">
+        <div className="max-w-7xl mx-auto w-full">
+          {/* Header */}
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className="font-['DM_Sans'] font-black text-[#98012E] text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] xl:text-[64px] 2xl:text-[82px] mb-3 leading-none tracking-normal text-center">
+              Why Aum Metal Alloy
             </h2>
-            <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto">
-              We stand out in the industry with our commitment to excellence and customer satisfaction
+            <p className="font-['Sansation'] font-normal text-[#7D7D7D] text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] max-w-4xl mx-auto leading-[36px] tracking-[0.01em] text-center">
+              Built on Quality, Consistency, and Manufacturing Excellence
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {features.map((feature, index) => (
-              <div 
-                key={index}
-                className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20"
-              >
-                <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                <p className="text-white/90 leading-relaxed">{feature.description}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
+            {/* LEFT — Accordion */}
+            <div className="space-y-2">
+              {features.map((feature, index) => (
+                <div
+                  key={index}
+                  className="border border-[#98012E] rounded-[20px] overflow-hidden"
+                >
+                  <button
+                    onClick={() => toggleAccordion(index)}
+                    className="w-full flex items-center justify-between p-4 text-left hover:bg-[#FFF5F7] transition"
+                  >
+                    <h3 className="font-['DM_Sans'] font-medium text-[#98012E] text-sm sm:text-base lg:text-lg pr-4">
+                      {feature.title}
+                    </h3>
+
+                    {expandedIndex === index ? (
+                      <span className="text-[#98012E] text-xl font-bold">
+                        ×
+                      </span>
+                    ) : (
+                      <span className="text-[#98012E] text-xl font-bold">
+                        ⌄
+                      </span>
+                    )}
+                  </button>
+
+                  <div
+                    className={`transition-all duration-300 overflow-hidden ${
+                      expandedIndex === index ? "max-h-40" : "max-h-0"
+                    }`}
+                  >
+                    <div className="px-4 pb-4">
+                      <p className="font-['Sansation'] text-[#7D7D7D] text-sm leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* RIGHT — Image */}
+            <div className="w-full h-full rounded-[20px] overflow-hidden">
+              <img
+                src="/src/assets/WhyAUMHome.jpg"
+                alt="Brass rods manufacturing"
+                className="w-full h-full object-cover rotate-90"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
-
+  );
+};
