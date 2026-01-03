@@ -308,24 +308,24 @@ We manufacture brass billets in standard and customized lengths, with cutting op
       </section>
 
       {/* Applications Across Industries Section */}
-      <section className="relative min-h-screen w-full bg-white flex items-center justify-center py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden">
+      <section className="relative w-full bg-white flex items-center justify-center py-8 sm:py-10 md:py-12 lg:py-16 overflow-hidden">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 md:px-8 w-full">
-          <h2 className="font-['DM_Sans'] font-black text-[#98012E] text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] text-center mb-12 leading-tight">
+          <h2 className="font-['DM_Sans'] font-black text-[#98012E] text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] text-center mb-6 sm:mb-8 md:mb-10 leading-tight">
             Applications Across Industries
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 lg:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 md:gap-5 lg:gap-6">
             {currentProduct.industries.map((industryIndex, index) => {
               const industry = industryData[industryIndex];
               return (
-                <div key={index} className="flex flex-col items-center gap-3">
-                  <div className="aspect-square w-full rounded-xl overflow-hidden border-2 border-[#E5C4CC] bg-gradient-to-br from-[#FFF5F7] to-white hover:shadow-lg transition-all duration-300 p-4 flex items-center justify-center">
+                <div key={index} className="flex flex-col items-center gap-2 sm:gap-2.5">
+                  <div className="aspect-square w-full rounded-xl overflow-hidden border-2 border-[#E5C4CC] bg-gradient-to-br from-[#FFF5F7] to-white hover:shadow-lg transition-all duration-300 p-3 sm:p-4 flex items-center justify-center">
                     <img
                       src={industry.image}
                       alt={industry.name}
                       className="w-full h-full object-contain"
                     />
                   </div>
-                  <p className="font-['Sansation'] text-[#98012E] text-[13px] sm:text-[14px] text-center leading-tight">
+                  <p className="font-['Sansation'] text-[#98012E] text-[12px] sm:text-[13px] md:text-[14px] text-center leading-tight px-1">
                     {industry.name}
                   </p>
                 </div>
