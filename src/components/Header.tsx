@@ -7,7 +7,7 @@ export const Header = () => {
   const navItems = [
     { label: 'Home', href: '/', isRoute: true },
     { label: 'About Us', href: '/about', isRoute: true },
-    { label: 'Our Products', href: '#product-home', isRoute: false },
+    { label: 'Our Products', href: '/products', isRoute: true },
     { label: 'Industries', href: '#industry-home', isRoute: false },
     { label: 'Contact', href: '#contact', isRoute: false },
   ]
