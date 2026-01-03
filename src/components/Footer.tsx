@@ -1,16 +1,9 @@
 export const Footer = () => {
   return (
-    <footer className="relative bg-[#98012E] pt-12 pb-8 overflow-hidden">
-      {/* Large Background Text */}
-      <div className="absolute bottom-0 left-0 right-0 overflow-hidden pointer-events-none">
-        <h2 className="font-['DM_Sans'] font-black text-[#B8124A] text-[120px] sm:text-[150px] md:text-[180px] lg:text-[220px] xl:text-[280px] opacity-50 whitespace-nowrap text-center leading-none">
-          AUM METAL ALLOY
-        </h2>
-      </div>
-
+    <footer className="bg-[#98012E] pt-12 overflow-hidden relative pb-0">
       {/* Footer Content Card */}
-      <div className="relative z-10 max-w-[95%] lg:max-w-[90%] mx-auto">
-        <div className="bg-[#FFF5F7] rounded-t-[30px] px-6 sm:px-8 md:px-12 lg:px-16 pt-10 pb-8">
+      <div className="z-10 max-w-[95%] lg:max-w-[90%] mx-auto mb-6">
+        <div className="bg-[#FFF5F7] rounded-[30px] px-6 sm:px-8 md:px-12 lg:px-16 pt-10 pb-8">
           {/* Main Footer Content */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 mb-10">
             {/* Brand Section */}
@@ -145,6 +138,15 @@ export const Footer = () => {
               Powered By - <span className="font-medium">Codelix IT Solutions Pvt. Ltd.</span>
             </p>
           </div>
+        </div>
+      </div>
+
+      {/* Large Background Text - Centered and At Bottom */}
+      <div className="w-full flex justify-center items-end pb-0">
+        <div className="max-w-[95%] lg:max-w-[90%] w-full">
+          <h2 className="font-['DM_Sans'] font-black text-[32px] sm:text-[48px] md:text-[64px] lg:text-[80px] xl:text-[100px] 2xl:text-[120px] opacity-50 text-center leading-none text-[#B8124A] translate-y-[20%]">
+            AUM METAL ALLOY
+          </h2>
         </div>
       </div>
     </footer>
