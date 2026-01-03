@@ -1,3 +1,5 @@
+import trustedHomeImg from '../../assets/trustedHome.png';
+
 export const ClientTestimonials = () => {
   return (
     <section
@@ -35,7 +37,7 @@ export const ClientTestimonials = () => {
 
             <div className="absolute right-0 top-[69.8%] flex flex-row items-start">
               <img
-                src="/src/assets/trustedHome.png"
+                src={trustedHomeImg}
                 alt=""
                 className="w-auto h-auto"
               />
@@ -104,7 +106,7 @@ export const ClientTestimonials = () => {
 
             <div className="absolute right-0 top-0 lg:w-[64.8%]">
               <img
-                src="/src/assets/trustedHome.png"
+                src={trustedHomeImg}
                 alt=""
                 className="w-auto h-auto"
               />

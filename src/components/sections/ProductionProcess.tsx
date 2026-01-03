@@ -1,19 +1,33 @@
+import rawMaterialSelectionIcon from '../../assets/AboutPage/Raw Material Selection.svg';
+import meltingIcon from '../../assets/AboutPage/Melting.svg';
+import chemicalAnalysisIcon from '../../assets/AboutPage/Chemical Analysis.svg';
+import billetCastingIcon from '../../assets/AboutPage/Billet Casting.svg';
+import preHeatingIcon from '../../assets/AboutPage/Pre Heating.svg';
+import hotExtrusionIcon from '../../assets/AboutPage/Hot Extrusion.svg';
+import straighteningIcon from '../../assets/AboutPage/Straightening.svg';
+import coldDrawingIcon from '../../assets/AboutPage/Cold Drawing.svg';
+import heatTreatmentIcon from '../../assets/AboutPage/Heat Treatment.svg';
+import pickingIcon from '../../assets/AboutPage/Picking.svg';
+import rodInspectionIcon from '../../assets/AboutPage/Rod Inspection.svg';
+import weighingIcon from '../../assets/AboutPage/Weighing.svg';
+import packingIcon from '../../assets/AboutPage/Packing.svg';
+
 export const ProductionProcess = () => {
   const processes = [
-    { step: '01', name: 'Raw Material Selection', icon: '/src/assets/AboutPage/Raw Material Selection.svg' },
-    { step: '02', name: 'Melting', icon: '/src/assets/AboutPage/Melting.svg' },
-    { step: '03', name: 'Chemical Analysis', icon: '/src/assets/AboutPage/Chemical Analysis.svg' },
-    { step: '04', name: 'Billet Casting', icon: '/src/assets/AboutPage/Billet Casting.svg' },
-    { step: '05', name: 'Pre-Heating', icon: '/src/assets/AboutPage/Pre Heating.svg' },
-    { step: '06', name: 'Hot Extrusion', icon: '/src/assets/AboutPage/Hot Extrusion.svg' },
-    { step: '07', name: 'Straightening', icon: '/src/assets/AboutPage/Straightening.svg' },
-    { step: '08', name: 'Cold Drawing', icon: '/src/assets/AboutPage/Cold Drawing.svg' },
-    { step: '09', name: 'Heat Treatment', icon: '/src/assets/AboutPage/Heat Treatment.svg' },
-    { step: '10', name: 'Cold / Hot Wash', icon: '/src/assets/AboutPage/Melting.svg' },
-    { step: '11', name: 'Picking', icon: '/src/assets/AboutPage/Picking.svg' },
-    { step: '12', name: 'Rod Inspection', icon: '/src/assets/AboutPage/Rod Inspection.svg' },
-    { step: '13', name: 'Weighing', icon: '/src/assets/AboutPage/Weighing.svg' },
-    { step: '14', name: 'Packing', icon: '/src/assets/AboutPage/Packing.svg' },
+    { step: '01', name: 'Raw Material Selection', icon: rawMaterialSelectionIcon },
+    { step: '02', name: 'Melting', icon: meltingIcon },
+    { step: '03', name: 'Chemical Analysis', icon: chemicalAnalysisIcon },
+    { step: '04', name: 'Billet Casting', icon: billetCastingIcon },
+    { step: '05', name: 'Pre-Heating', icon: preHeatingIcon },
+    { step: '06', name: 'Hot Extrusion', icon: hotExtrusionIcon },
+    { step: '07', name: 'Straightening', icon: straighteningIcon },
+    { step: '08', name: 'Cold Drawing', icon: coldDrawingIcon },
+    { step: '09', name: 'Heat Treatment', icon: heatTreatmentIcon },
+    { step: '10', name: 'Cold / Hot Wash', icon: meltingIcon },
+    { step: '11', name: 'Picking', icon: pickingIcon },
+    { step: '12', name: 'Rod Inspection', icon: rodInspectionIcon },
+    { step: '13', name: 'Weighing', icon: weighingIcon },
+    { step: '14', name: 'Packing', icon: packingIcon },
   ];
 
   return (

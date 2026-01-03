@@ -1,3 +1,5 @@
+import ourProfileImg from '../../assets/AboutPage/Our Profile.png';
+
 export const AboutProfile = () => {
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center bg-white py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden">
@@ -28,7 +30,7 @@ export const AboutProfile = () => {
             <div className="flex items-center justify-center order-1 lg:order-2">
               <div className="relative w-full max-w-lg lg:max-w-none">
                 <img
-                  src="/src/assets/AboutPage/Our Profile.png"
+                  src={ourProfileImg}
                   alt="Our Manufacturing Facility"
                   className="w-full h-auto object-contain rounded-2xl"
                 />

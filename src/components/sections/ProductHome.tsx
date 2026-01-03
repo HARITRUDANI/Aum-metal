@@ -1,4 +1,5 @@
 import { CTAButton } from "../CTAButton";
+import productHomeRightImg from "../../assets/ProductHomeRight.png";
 
 export const ProductHome = () => {
   return (
@@ -45,7 +46,7 @@ export const ProductHome = () => {
             <div className="flex items-center justify-center order-1 lg:order-2 lg:absolute lg:right-0 lg:bottom-0">
               <div className="relative w-full max-w-[400px] sm:max-w-[500px] lg:max-w-[500px] xl:max-w-[600px]">
                 <img
-                  src="/src/assets/ProductHomeRight.png"
+                  src={productHomeRightImg}
                   alt="Brass rods and cylinders - Our product range"
                   className="w-full h-auto object-contain max-h-[400px] sm:max-h-[450px] lg:max-h-[500px] xl:max-h-[550px]"
                 />

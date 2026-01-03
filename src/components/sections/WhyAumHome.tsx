@@ -1,4 +1,5 @@
 import { useState } from "react";
+import whyAumHomeImg from "../../assets/WhyAUMHome.jpg";
 
 export const WhyAumHome = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
@@ -107,7 +108,7 @@ export const WhyAumHome = () => {
             {/* RIGHT — Image */}
             <div className="w-full h-full rounded-[20px] overflow-hidden">
               <img
-                src="/src/assets/WhyAUMHome.jpg"
+                src={whyAumHomeImg}
                 alt="Brass rods manufacturing"
                 className="w-full h-full object-cover rotate-90"
               />

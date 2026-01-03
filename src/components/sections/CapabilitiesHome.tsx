@@ -1,4 +1,9 @@
 import { useState } from "react";
+import precisionAlloyImg from "../../assets/Precision Alloy Control.png";
+import dimensionalAccuracyImg from "../../assets/Dimensional Accuracy.png";
+import consistentProductionImg from "../../assets/Consistent Production.png";
+import customManufacturingImg from "../../assets/Custom Manufacturing.png";
+import industrialReliabilityImg from "../../assets/Industrial Reliability.png";
 
 export const CapabilitiesHome = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -9,35 +14,35 @@ export const CapabilitiesHome = () => {
       subtitle: "Advanced Processes for Precision Brass Production",
       description:
         "Engineered brass compositions maintained through controlled melting and casting for consistent strength and machinability.",
-      image: "/src/assets/Precision Alloy Control.png",
+      image: precisionAlloyImg,
     },
     {
       title: "Dimensional Accuracy",
       subtitle: "Advanced Processes for Precision Brass Production",
       description:
         "Engineered brass compositions maintained through controlled melting and casting for consistent strength and machinability.",
-      image: "/src/assets/Dimensional Accuracy.png",
+      image: dimensionalAccuracyImg,
     },
     {
       title: "Consistent Production",
       subtitle: "Advanced Processes for Precision Brass Production",
       description:
         "Repeatable manufacturing processes deliver uniform quality across batches, supporting long-term and bulk requirements.",
-      image: "/src/assets/Consistent Production.png",
+      image: consistentProductionImg,
     },
     {
       title: "Custom Manufacturing",
       subtitle: "Advanced Processes for Precision Brass Production",
       description:
         "Repeatable manufacturing processes deliver uniform quality across batches, supporting long-term and bulk requirements.",
-      image: "/src/assets/Custom Manufacturing.png",
+      image: customManufacturingImg,
     },
     {
       title: "Industrial Reliability",
       subtitle: "Advanced Processes for Precision Brass Production",
       description:
         "Flexible production capabilities to meet specific sizes, grades, and application-driven specifications.",
-      image: "/src/assets/Industrial Reliability.png",
+      image: industrialReliabilityImg,
     },
   ];
 

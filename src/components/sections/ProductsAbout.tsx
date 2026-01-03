@@ -1,4 +1,8 @@
 import { useState } from 'react';
+import brassIngotsImg from '../../assets/AboutPage/Brass Ingots.png';
+import brassRodsImg from '../../assets/AboutPage/Brass Rods.png';
+import brassBilletsImg from '../../assets/AboutPage/Brass Billets.png';
+import customSolutionsImg from '../../assets/AboutPage/Custom Brass Solutions.png';
 
 export const ProductsAbout = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -11,7 +15,7 @@ export const ProductsAbout = () => {
       subtitle: 'Advanced Processes for Precision Brass Production',
       description:
         'Precision-cast brass ingots manufactured with controlled alloy composition, uniform structure, and consistent metallurgical properties. Ideal for remelting, casting, extrusion, and a wide range of industrial and manufacturing applications.',
-      image: '/src/assets/AboutPage/Brass Ingots.png',
+      image: brassIngotsImg,
     },
     {
       id: 'brass-rods',
@@ -20,7 +24,7 @@ export const ProductsAbout = () => {
       subtitle: 'Advanced Processes for Precision Brass Production',
       description:
         'Our brass rods are manufactured with controlled alloy composition and precise dimensional accuracy. Designed for excellent machinability and strength, they are ideal for automotive, electrical, plumbing, and engineering applications.',
-      image: '/src/assets/AboutPage/Brass Rods.png',
+      image: brassRodsImg,
     },
     {
       id: 'brass-billets',
@@ -29,7 +33,7 @@ export const ProductsAbout = () => {
       subtitle: 'Advanced Processes for Precision Brass Production',
       description:
         'High-quality brass billets engineered for extrusion and forging processes. Our billets are manufactured with consistent composition and quality, ensuring optimal performance in industrial applications.',
-      image: '/src/assets/AboutPage/Brass Billets.png',
+      image: brassBilletsImg,
     },
     {
       id: 'custom-solutions',
@@ -38,7 +42,7 @@ export const ProductsAbout = () => {
       subtitle: 'Advanced Processes for Precision Brass Production',
       description:
         'Tailored brass products designed to meet your specific requirements. From custom alloy compositions to precise dimensions, we deliver solutions that match your unique industrial needs.',
-      image: '/src/assets/AboutPage/Custom Brass Solutions.png',
+      image: customSolutionsImg,
     },
   ];
 
@@ -74,7 +78,7 @@ export const ProductsAbout = () => {
               ))}
             </div>
           </div>
-          <div className="relative flex-1 min-h-0 overflow-hidden">
+          <div className="relative flex-1 min-h-0 overflow-hidden max-h-[550px]">
             {/* Arrow Indicator */}
             {/* <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
               <div 
@@ -100,9 +104,9 @@ export const ProductsAbout = () => {
 
             {/* Content with Border */}
             <div className="border-2 border-[#E5E5E5] rounded-[30px] p-4 sm:p-6 md:p-8 lg:p-10 h-full">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 h-full items-start">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 h-full items-center">
                 {/* Left - Image */}
-                <div className="w-full h-full min-h-[250px] sm:min-h-[300px] lg:min-h-0 rounded-[20px] overflow-hidden order-2 lg:order-1">
+                <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden order-2 lg:order-1 border border-[#98012E] flex items-center justify-center">
                   <img
                     src={products[activeTab].image}
                     alt={products[activeTab].title}

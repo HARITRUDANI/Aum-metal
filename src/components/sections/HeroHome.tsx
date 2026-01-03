@@ -1,4 +1,5 @@
 import { CTAButton } from "../CTAButton";
+import heroHomeLeftImg from "../../assets/HeroHomeLeft.png";
 
 export const HeroHome = () => {
   return (
@@ -47,7 +48,7 @@ export const HeroHome = () => {
         }}
       >
         <img
-          src="/src/assets/HeroHomeLeft.png"
+          src={heroHomeLeftImg}
           alt=""
           className="w-full h-full object-cover"
           style={{

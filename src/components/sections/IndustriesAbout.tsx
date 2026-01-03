@@ -1,15 +1,26 @@
+import oilGasValveImg from '../../assets/AboutPage/Oil, Gas & Industrial Valve.png';
+import automativeImg from '../../assets/AboutPage/Automative.png';
+import constructionImg from '../../assets/AboutPage/Construction.png';
+import homeApplianceImg from '../../assets/AboutPage/Home Appliance.png';
+import lockHardwareImg from '../../assets/AboutPage/Lock , Hardware.png';
+import plumbingImg from '../../assets/AboutPage/Plumbing.png';
+import watchImg from '../../assets/AboutPage/Watch.png';
+import surgicalEquipmentImg from '../../assets/AboutPage/Surgical Equipment.png';
+import electricalElectronicsImg from '../../assets/AboutPage/Electrical & Electronics.png';
+import agricultureEquipmentImg from '../../assets/AboutPage/Agriculture Equipment.png';
+
 export const IndustriesAbout = () => {
   const industries = [
-    { name: 'Oil, Gas and Plumbing', image: '/src/assets/AboutPage/Oil, Gas & Industrial Valve.png' },
-    { name: 'Automative', image: '/src/assets/AboutPage/Automative.png' },
-    { name: 'Chemical & Petrochemical', image: '/src/assets/AboutPage/Construction.png' },
-    { name: 'HVAC systems', image: '/src/assets/AboutPage/Home Appliance.png' },
-    { name: 'Lock , Hardware', image: '/src/assets/AboutPage/Lock , Hardware.png' },
-    { name: 'Oil, Gas & Industrial Valve', image: '/src/assets/AboutPage/Plumbing.png' },
-    { name: 'Watch', image: '/src/assets/AboutPage/Watch.png' },
-    { name: 'Surgical', image: '/src/assets/AboutPage/Surgical Equipment.png' },
-    { name: 'Plumbing', image: '/src/assets/AboutPage/Electrical & Electronics.png' },
-    { name: 'Agriculture', image: '/src/assets/AboutPage/Agriculture Equipment.png' },
+    { name: 'Oil, Gas and Plumbing', image: oilGasValveImg },
+    { name: 'Automative', image: automativeImg },
+    { name: 'Chemical & Petrochemical', image: constructionImg },
+    { name: 'HVAC systems', image: homeApplianceImg },
+    { name: 'Lock , Hardware', image: lockHardwareImg },
+    { name: 'Oil, Gas & Industrial Valve', image: plumbingImg },
+    { name: 'Watch', image: watchImg },
+    { name: 'Surgical', image: surgicalEquipmentImg },
+    { name: 'Plumbing', image: electricalElectronicsImg },
+    { name: 'Agriculture', image: agricultureEquipmentImg },
   ];
 
   return (

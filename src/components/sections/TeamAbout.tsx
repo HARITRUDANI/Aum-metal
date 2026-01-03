@@ -1,14 +1,17 @@
+import rajeshPatelImg from '../../assets/AboutPage/Mr. Rajesh Patel.png';
+import aumPatelImg from '../../assets/AboutPage/Mr. Aum Patel.png';
+
 export const TeamAbout = () => {
   const team = [
     {
       name: 'Mr. Rajesh Patel',
       role: 'Managing Partner',
-      image: '/src/assets/AboutPage/Mr. Rajesh Patel.png',
+      image: rajeshPatelImg,
     },
     {
       name: 'Mr. Aum Patel',
       role: 'Partner',
-      image: '/src/assets/AboutPage/Mr. Aum Patel.png',
+      image: aumPatelImg,
     },
   ];
 

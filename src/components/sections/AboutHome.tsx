@@ -1,3 +1,5 @@
+import aboutHomeIcon from '../../assets/AboutHome.svg';
+
 export const AboutHome = () => {
   const features = [
     {
@@ -63,7 +65,7 @@ export const AboutHome = () => {
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <div className="relative w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 lg:w-44 lg:h-44">
                     <img
-                      src="/src/assets/AboutHome.svg"
+                      src={aboutHomeIcon}
                       alt=""
                       className="w-full h-full object-contain"
                       style={{

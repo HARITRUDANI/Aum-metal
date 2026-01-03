@@ -1,28 +1,42 @@
+import electricalElectronicsIcon from '../../assets/Electrical & Electronics.svg';
+import autoMobileIcon from '../../assets/Auto mobile.svg';
+import plumbingIcon from '../../assets/Plumbing.svg';
+import sanitarywareIcon from '../../assets/Sanitaryware.svg';
+import constructionIcon from '../../assets/Construction.svg';
+import oemManufacturingIcon from '../../assets/OEM Manufacturing.svg';
+import autoComponentsIcon from '../../assets/Auto Components.svg';
+import infrastructureIcon from '../../assets/Infrastructure.svg';
+import hardwareManufacturingIcon from '../../assets/Hardware Manufacturing.svg';
+import globalTradeIndustriesIcon from '../../assets/Global Trade Industries.svg';
+import energyEquipmentIcon from '../../assets/Energy Equipment.svg';
+import renewableComponentsIcon from '../../assets/Renewable Components.svg';
+import industryImageBg from '../../assets/Industry Image.svg';
+
 export const IndustryHome = () => {
   const industries = [
     {
       name: "Electrical & Electronics",
-      icon: "/src/assets/Electrical & Electronics.svg",
+      icon: electricalElectronicsIcon,
     },
-    { name: "Auto mobile", icon: "/src/assets/Auto mobile.svg" },
-    { name: "Plumbing", icon: "/src/assets/Plumbing.svg" },
-    { name: "Sanitaryware", icon: "/src/assets/Sanitaryware.svg" },
-    { name: "Construction", icon: "/src/assets/Construction.svg" },
-    { name: "OEM Manufacturing", icon: "/src/assets/OEM Manufacturing.svg" },
-    { name: "Auto Components", icon: "/src/assets/Auto Components.svg" },
-    { name: "Infrastructure", icon: "/src/assets/Infrastructure.svg" },
+    { name: "Auto mobile", icon: autoMobileIcon },
+    { name: "Plumbing", icon: plumbingIcon },
+    { name: "Sanitaryware", icon: sanitarywareIcon },
+    { name: "Construction", icon: constructionIcon },
+    { name: "OEM Manufacturing", icon: oemManufacturingIcon },
+    { name: "Auto Components", icon: autoComponentsIcon },
+    { name: "Infrastructure", icon: infrastructureIcon },
     {
       name: "Hardware Manufacturing",
-      icon: "/src/assets/Hardware Manufacturing.svg",
+      icon: hardwareManufacturingIcon,
     },
     {
       name: "Global Trade Industries",
-      icon: "/src/assets/Global Trade Industries.svg",
+      icon: globalTradeIndustriesIcon,
     },
-    { name: "Energy Equipment", icon: "/src/assets/Energy Equipment.svg" },
+    { name: "Energy Equipment", icon: energyEquipmentIcon },
     {
       name: "Renewable Components",
-      icon: "/src/assets/Renewable Components.svg",
+      icon: renewableComponentsIcon,
     },
   ];
 
@@ -34,7 +48,7 @@ export const IndustryHome = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/Industry Image.svg"
+          src={industryImageBg}
           alt=""
           className="w-[50vw] h-80vh md:h-full  object-cover opacity-100"
         />

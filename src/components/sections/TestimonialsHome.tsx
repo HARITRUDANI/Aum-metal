@@ -1,4 +1,6 @@
 import { CTAButton } from "../CTAButton";
+import trustRightHomeImg from "../../assets/TrustRightHome.png";
+import trustedHomeImg from "../../assets/trustedHome.png";
 
 export const TestimonialsHome = () => {
   return (
@@ -15,7 +17,7 @@ export const TestimonialsHome = () => {
               <div className="flex items-center justify-center lg:hidden order-1 w-full">
                 <div className="relative w-full max-w-md">
                   <img
-                    src="/src/assets/TrustRightHome.png"
+                    src={trustRightHomeImg}
                     alt="Precision brass rods"
                     className="w-full h-auto object-contain"
                   />
@@ -48,7 +50,7 @@ export const TestimonialsHome = () => {
               <div className="hidden lg:flex items-end justify-end order-2 lg:absolute lg:right-0 lg:bottom-0 h-full">
                 <div className="relative">
                   <img
-                    src="/src/assets/TrustRightHome.png"
+                    src={trustRightHomeImg}
                     alt="Precision brass rods"
                     className="w-auto h-[450px] xl:h-[500px] 2xl:h-[550px] object-contain"
                   />
@@ -95,7 +97,7 @@ export const TestimonialsHome = () => {
 
                 <div className="absolute right-0 top-[69.8%] flex flex-row items-start">
                   <img
-                    src="/src/assets/trustedHome.png"
+                    src={trustedHomeImg}
                     alt=""
                     className="w-auto h-auto"
                   />
@@ -164,7 +166,7 @@ export const TestimonialsHome = () => {
 
                 <div className="absolute right-0 top-0 lg:w-[64.8%]">
                   <img
-                    src="/src/assets/trustedHome.png"
+                    src={trustedHomeImg}
                     alt=""
                     className="w-auto h-auto"
                   />
