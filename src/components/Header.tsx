@@ -1,14 +1,15 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navItems = [
-    { label: 'Home', href: '#hero-home' },
-    { label: 'About Us', href: '#about-home' },
-    { label: 'Our Products', href: '#product-home' },
-    { label: 'Industries', href: '#industry-home' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Home', href: '/', isRoute: true },
+    { label: 'About Us', href: '/about', isRoute: true },
+    { label: 'Our Products', href: '#product-home', isRoute: false },
+    { label: 'Industries', href: '#industry-home', isRoute: false },
+    { label: 'Contact', href: '#contact', isRoute: false },
   ]
 
   return (
@@ -16,24 +17,34 @@ export const Header = () => {
       <nav className="content-padding pt-4">
         <div className="flex items-center justify-between">
 
-          {/* Logo — NOT TOUCHED */}
-          <div
-            className="flex items-center justify-center opacity-100 font-bold not-italic leading-none tracking-normal rounded text-white w-[96px] h-[47px] md:w-24 md:h-[47px]"
+          {/* Logo */}
+          <Link
+            to="/"
+            className="flex items-center justify-center opacity-100 font-bold not-italic leading-none tracking-normal rounded text-white w-[96px] h-[47px] md:w-24 md:h-[47px] hover:opacity-80 transition-opacity"
             style={{ fontFamily: 'Sansation, sans-serif' }}
           >
             <span className="text-[28px] md:text-[42px]">Logo</span>
-          </div>
+          </Link>
 
           {/* Desktop Nav */}
           <ul className="hidden md:flex items-center gap-8">
             {navItems.map(item => (
               <li key={item.href}>
-                <a
-                  href={item.href}
-                  className="transition-opacity hover:opacity-80"
-                >
-                  {item.label}
-                </a>
+                {item.isRoute ? (
+                  <Link
+                    to={item.href}
+                    className="transition-opacity hover:opacity-80"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    href={item.href}
+                    className="transition-opacity hover:opacity-80"
+                  >
+                    {item.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
@@ -71,13 +82,23 @@ export const Header = () => {
           <ul className="flex flex-col gap-4 pb-4">
             {navItems.map(item => (
               <li key={item.href}>
-                <a
-                  href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block transition-opacity hover:opacity-80"
-                >
-                  {item.label}
-                </a>
+                {item.isRoute ? (
+                  <Link
+                    to={item.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block transition-opacity hover:opacity-80"
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    href={item.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block transition-opacity hover:opacity-80"
+                  >
+                    {item.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
